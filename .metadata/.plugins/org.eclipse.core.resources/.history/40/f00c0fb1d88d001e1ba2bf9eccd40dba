@@ -1,0 +1,14 @@
+package com.springbook.biz.common;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class AroundAdvice {
+	public Object around_log(ProceedingJoinPoint _pjp) throws Throwable {
+		
+		// before
+		Object obj = _pjp.proceed();
+		// after
+		
+		return obj;
+	}
+}
