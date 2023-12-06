@@ -12,7 +12,7 @@
 
 		<h1>글 목록</h1>
 		<h3>
-			test 님 환영합니다.<a href="Logout.do">Logout</a>
+			${name } 님 환영합니다.<a href="Logout.do">Logout</a>
 		</h3>
 
 		<form action="GetBoardList.jsp" method="post">

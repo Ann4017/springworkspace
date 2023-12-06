@@ -14,3 +14,9 @@
 12월 04, 2023 17:52:16.77 [17672:13620:1204/175216.770:ERROR:device_event_log_impl.cc(192)] [17:52:16.769] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
 12월 04, 2023 17:55:12.92 [17672:13620:1204/175512.923:ERROR:device_event_log_impl.cc(192)] [17:55:12.923] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
 12월 04, 2023 17:58:30.17 [17328:11368:1204/175830.175:ERROR:device_event_log_impl.cc(192)] [17:58:30.175] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+
+12월 06, 2023 17:27:09.15 NEW SESSION
+12월 06, 2023 17:27:09.15 [14716:2116:1206/172709.150:ERROR:device_event_log_impl.cc(192)] [17:27:09.149] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+12월 06, 2023 18:01:08.20 [12624:10604:1206/180108.205:ERROR:device_event_log_impl.cc(192)] [18:01:08.190] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+12월 06, 2023 18:05:43.46 [10168:816:1206/180543.468:ERROR:device_event_log_impl.cc(192)] [18:05:43.468] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)
+12월 06, 2023 18:39:39.40 [18724:11152:1206/183939.402:ERROR:device_event_log_impl.cc(192)] [18:39:39.402] USB: usb_service_win.cc:104 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: 요소가 없습니다. (0x490)

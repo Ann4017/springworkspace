@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.springbook.biz.user.UserVO;
 import com.springbook.biz.user.impl.UserDAO;
 
-@Controller
+//@Controller
 public class LoginController {
 
 	@RequestMapping (value = "/Login.do")

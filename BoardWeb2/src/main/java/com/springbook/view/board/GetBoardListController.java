@@ -15,7 +15,7 @@ import com.springbook.biz.board.BoardVO;
 import com.springbook.biz.board.impl.BoardDAO;
 
 
-@Controller
+//@Controller
 public class GetBoardListController {
 
 	@RequestMapping(value = "/GetBoardList.do")

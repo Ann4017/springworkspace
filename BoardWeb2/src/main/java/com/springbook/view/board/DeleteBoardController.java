@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.springbook.biz.board.BoardVO;
 import com.springbook.biz.board.impl.BoardDAO;
 
-@Controller
+//@Controller
 public class DeleteBoardController{
 	@RequestMapping (value = "/DeleteBoard.do")
 	public String delete_board(BoardVO vo, BoardDAO dao) {
