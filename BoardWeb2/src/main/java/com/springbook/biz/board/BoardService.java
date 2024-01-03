@@ -15,5 +15,5 @@ public interface BoardService {
 	// 글 상세 조회
 	BoardVO select_board(BoardVO _vo);
 	// 글 전체 조회
-	List<BoardVO> select_board_list();
+	List<BoardVO> select_board_list(BoardVO _vo);
 }

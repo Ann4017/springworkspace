@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 900px;
+}
+
+main {
+	width: 840px;
+	margin-bottom: 100px;
+}
+
+#refund_title {
+	margin-bottom: 50px;
+	border-bottom: 1px solid black;	
+}
+
+#refund_content {
+	margin-bottom: 30px;
+}
+
+#refund_table {
+	width: 840px;
+	height: 600px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-collapse: collapse;
+}
+
+#refund_table_left {
+	width: 200px;
+	height: 50px;
+	text-align: right;
+	padding-right: 20px;
+	background-color: #d8d8d8;
+	font-weight: bold;
+	border-bottom: 1px solid #C3C3C3;
+}
+
+#select {
+	width: 100px;
+	height: 20px;
+}
+
+#refund_table_left_textarea {
+	width: 200px;
+	height: 300px;
+	text-align: right;
+	padding-right: 20px;
+	background-color: #d8d8d8;
+	font-weight: bold;
+}
+
+#refund_table_right {
+	width: 640px;
+	height: 50px;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 10pt;
+	border-bottom: 1px solid #C3C3C3;
+}
+
+#refund_table_right2 {
+	width: 640px;
+	height: 50px;
+	text-align: left;
+	padding-left: 20px;
+	font-size: 10pt;
+	border-bottom: 1px solid black;
+}
+
+#textarea {
+	width: 620px;
+	height: 280px;
+	border-radius: 5px;
+	border: 1px solid #C3C3C3;
+	resize: none;
+}
+
+#refund_agreement {
+	height: 270px;
+	display: grid;
+	grid-template-rows: 80px 60px 60px;
+	
+}
+
+#buttons {
+	display: grid;
+	grid-template-columns: 690px 150px
+}
+
+span {
+	padding-left: 10px;
+	font-size: 10pt;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+#button1 {
+	text-align: right;
+}
+
+#button2 {
+	text-align: right;
+}
+
+#input {
+	width: 100px;
+	height: 30px;
+}

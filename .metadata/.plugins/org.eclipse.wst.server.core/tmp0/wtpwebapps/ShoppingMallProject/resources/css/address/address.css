@@ -1,0 +1,74 @@
+
+        #addr-choice {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 40px;
+        }
+
+        #addr-choice h2 {
+            text-align: center;
+        }
+        
+
+        .recipient {
+            display: flex;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 1.2em;
+            margin-right: 2px;
+            font-weight: bold;
+        }
+
+        .base {
+            color: green;
+            font-size: 0.9em;
+            margin-left: 5px;
+        }
+
+        .button {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            margin-top: auto; 
+            
+        }
+
+        .button button {
+            margin-left: 5px;
+            margin-top: 5px; 
+        }
+
+        .show-more {
+            cursor: pointer;
+            display: block;
+            text-align: center;
+        }
+
+
+        hr {
+            margin: 10px 0;
+            border: 1px solid black;
+        }
+
+        button {
+            margin-top: 10px;
+            background-color: white;
+            border-color: black;
+            height: 30px;
+            cursor: pointer;
+            
+        }
+        
+        #close{
+        	margin-top: 10px;
+        }
+        #add,
+       	#close {
+            width: 100%;
+        }

@@ -2,4 +2,5 @@
 <aop-reference-model>
 <aop-project name="BoardWeb2"/>
 <aop-project name="BoardWeb"/>
+<aop-project name="ShoppingMallProject"/>
 </aop-reference-model>

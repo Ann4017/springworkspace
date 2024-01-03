@@ -12,8 +12,9 @@ import com.springbook.biz.board.BoardVO;
 public class BoardServiceImpl implements BoardService {
 
 	@Autowired
-	private BoardDAOSpring boardDAO;
+//	private BoardDAOSpring boardDAO;
 //	private BoardDAO boardDAO;
+	private BoardDAOMybatis boardDAO;
 
 	
 	@Override
@@ -46,10 +47,10 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public List<BoardVO> select_board_list() {
+	public List<BoardVO> select_board_list(BoardVO _vo) {
 		// TODO Auto-generated method stub
 
-		return boardDAO.select_board_list();
+		return boardDAO.select_board_list(_vo);
 	}
 
 }

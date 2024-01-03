@@ -128,7 +128,7 @@ public class DispatcherServlet extends HttpServlet {
 			
 			BoardVO vo = new BoardVO();
 			BoardDAO dao = new BoardDAO();
-			List<BoardVO> board_list = dao.select_board_list();
+			List<BoardVO> board_list = dao.select_board_list(vo);
 			
 			HttpSession session = _req.getSession();
 			session.setAttribute("board_list", board_list);

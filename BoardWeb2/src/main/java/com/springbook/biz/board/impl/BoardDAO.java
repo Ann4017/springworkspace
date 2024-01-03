@@ -31,6 +31,10 @@ public class BoardDAO {
 	private final String BOARD_DELETE = "delete from board where seq = ?";
 	
 	private final String COUNT_UPDATE = "update board set cnt = ? where seq = ?";
+	
+	private final String BOARD_LIST_T = "select * from board where title like '%'||?||'%' order by seq desc";
+	
+	private final String BOARD_LIST_C = "select * from board where content like '%'||?||'%' order by seq desc";
 	// CRUD 기능의 메소드 구현
 
 	// 글 등록
@@ -123,12 +127,20 @@ public class BoardDAO {
 	}
 	
 	// 글 목록 조회
-	public List<BoardVO> select_board_list() {
+	public List<BoardVO> select_board_list(BoardVO _vo) {
 		conn = JDBCUtil.get_connection();
 		List<BoardVO> list = new ArrayList<BoardVO>();
 		
 		try {
-			psmt = conn.prepareStatement(BOARD_LIST_SELECT);
+			//psmt = conn.prepareStatement(BOARD_LIST_SELECT);
+			if (_vo.getSearchCondition().equals("TITLE")) {
+				psmt = conn.prepareStatement(BOARD_LIST_T);
+			} else if (_vo.getSearchCondition().equals("CONTENT")) {
+				psmt = conn.prepareStatement(BOARD_LIST_C);
+			}
+			
+			psmt.setString(1, _vo.getSearchKeyword());
+			
 			rs = psmt.executeQuery();
 			
 			while (rs.next()) {

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO">
+	<resultMap type="board" id="boardResult"> <!-- vo객체의 필드와 db의 컬럼의 이름이 일치하지 않는경우 매칭 -->
+		<id property="seq" column="SEQ" />
+		<result property="title" column="TITLE" />
+	</resultMap>
+
+	<insert id="insertBoard" parameterType="board"> <!-- parameterType="board"(별칭)이며 생략 가능 -->
+		insert into board (seq, title, writer, content) -->
+		values ((select
+		nvl(max(seq), 0) + 1 from board), #{title}, #{writer},
+		#{content})
+		<!-- getTitle() 을 의미 함 -->
+
+		<!-- <selectKey keyProperty="seq" resultType="int"> 생성 한 seq 사용법 -->
+		<!-- select -->
+		<!-- board_seq.nextval as seq from dual; -->
+		<!-- </selectKey> -->
+		<!-- insert into board (seq, title, writer, content) -->
+		<!-- values (#{seq}, #{title}, #{writer}, #{content}) -->
+	</insert>
+
+	<update id="updateBoard">
+		update board set title = #{title}, content =
+		#{content}
+		where seq = #{seq}
+	</update>
+
+	<delete id="deleteBoard">
+		delete from board
+		where seq = #{seq}
+	</delete>
+
+	<select id="selectBoard" resultType="boardResult"> <!-- resultType="board" 반환 타입을 명시해 주어야 함 -->
+		<!-- 쿼리문에 부등호가 들어갈 시 CDATA로 처리해야 문자로 처리함 (<, >, ...) -->
+		<![CDATA[
+		select * from board
+		where seq = #{seq}
+		]]>
+	</select>
+
+	<select id="selectBoardList" resultType="boardResult">
+		select * from board
+		where title like '%'||#{searchKeyword}||'%'
+		order by seq desc
+	</select>
+</mapper>

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Dec 13 15:47:20 KST 2023
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\abh\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=C\:\\Users\\abh\\Desktop\\File\\spring\\spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\ShoppingMallProject\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar
+org.eclipse.jst.jee.server\:ShoppingMallProject=C\:\\Users\\abh\\Desktop\\File\\spring\\spring-tool-suite-3.9.11.RELEASE-e4.14.0-win32-x86_64\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\ShoppingMallProject
